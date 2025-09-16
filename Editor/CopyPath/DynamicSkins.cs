@@ -159,9 +159,9 @@ namespace RuneFoxMods.DynamicSkins
       SkinDefs.Add(skinDef.nameToken, skinDef);
     }
     
-    internal void SkinDefApply(Action<SkinDef, GameObject> orig, SkinDef self, GameObject modelObject)
+    internal System.Collections.IEnumerator SkinDefApply(Func<SkinDef, GameObject, List<AssetReferenceT<Material>>, List<AssetReferenceT<Mesh>>, int, System.Collections.IEnumerator> orig, SkinDef self, GameObject modelObject, List<AssetReferenceT<Material>> loadedMaterials, List<AssetReferenceT<Mesh>> loadedMeshes, int unloadType) 
     {
-      orig(self, modelObject);
+      var ret = orig(self, modelObject, loadedMaterials, loadedMeshes, unloadType);
 
       RemoveInvalidModelObjects();
 
@@ -179,7 +179,7 @@ namespace RuneFoxMods.DynamicSkins
           {
             ClearSkinModifications(LastModelObject, modificatons);
           }
-          return;
+          return ret;
         }
 
         if (modificatons == null)
@@ -199,6 +199,7 @@ namespace RuneFoxMods.DynamicSkins
         InstanceLogger.LogError(e);
       }
 
+      return ret;
       //print heiarchy
       //Utils.readheiarchy(modelObject);
     }
