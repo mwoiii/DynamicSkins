@@ -13,6 +13,7 @@ namespace RuneFoxMods.DynamicSkinBuilder
     using RoRSkinBuilder;
     using DynamicSkins;
     using UnityEngine;
+    using UnityEngine.AddressableAssets;
     using System;
     
     /// <summary>
