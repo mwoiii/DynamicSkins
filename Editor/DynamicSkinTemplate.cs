@@ -56,7 +56,7 @@ namespace RuneFoxMods.DynamicSkinBuilder
       internal void BeforeStart()
       {
         _DynamicSkinManager.InstanceLogger = Instance.Logger;
-        new Hook(typeof(SkinDef).GetMethod(nameof(SkinDef.Apply)), (Action<Action<SkinDef, GameObject>, SkinDef, GameObject>) _DynamicSkinManager.SkinDefApply).Apply();
+        new Hook(typeof(SkinDef).GetMethod(nameof(SkinDef.ApplyAsync)), (Func<Func<SkinDef, GameObject, List<AssetReferenceT<Material>>, List<AssetReferenceT<Mesh>>, int, System.Collections.IEnumerator>, SkinDef, GameObject, List<AssetReferenceT<Material>>, List<AssetReferenceT<Mesh>>, int, System.Collections.IEnumerator>) _DynamicSkinManager.SkinDefApply).Apply();
       }
 
       internal void AfterStart()

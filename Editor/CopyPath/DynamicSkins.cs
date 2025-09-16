@@ -4,6 +4,7 @@ using System.Linq;
 using System;
 using RoR2;
 using BepInEx.Logging;
+using UnityEngine.AddressableAssets;
 
 namespace RuneFoxMods.DynamicSkins
 {
