@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using RoRSkinBuilder.Data;
 using DynamicSkins;
-using RoRSkinBuilderExtension;
+using RuneFoxMods.RoRSkinBuilderExtension;
 
 namespace DynamicSkinBuilder
 {
