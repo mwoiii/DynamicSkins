@@ -6,7 +6,7 @@ using RoR2;
 using BepInEx.Logging;
 using UnityEngine.AddressableAssets;
 
-namespace RuneFoxMods.DynamicSkins
+namespace DynamicSkins
 {
   public static class DynamicSkinHelpers
   {

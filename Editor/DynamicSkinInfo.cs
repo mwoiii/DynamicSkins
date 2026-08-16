@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using RoRSkinBuilder.Data;
-using RuneFoxMods.DynamicSkins;
-using RuneFoxMods.RoRSkinBuilderExtension;
+using DynamicSkins;
+using RoRSkinBuilderExtension;
 
-namespace RuneFoxMods.DynamicSkinBuilder
+namespace DynamicSkinBuilder
 {
   [AddComponentMenu("RoR Skins/Dynamic Skin Info")]
   public class DynamicSkinInfo : ExtensionBase

@@ -4,7 +4,7 @@ using UnityEngine;
 using RoR2;
 
 
-namespace RuneFoxMods
+namespace DynamicSkins
 {
   class Utils
   {

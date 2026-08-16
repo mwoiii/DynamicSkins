@@ -1,6 +1,6 @@
 {
   "name": "com.mwoiii.dynamicskinbuilder",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "displayName": "RoR2 Dynamic Skin Builder",
   "description": "Tool for adding Dynamic Bones to RoR2 skins",
   "unity": "2021.3",

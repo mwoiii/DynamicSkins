@@ -1,4 +1,4 @@
-﻿namespace RuneFoxMods.DynamicSkinBuilder
+﻿namespace DynamicSkinBuilder
 {
   public partial class DynamicSkinTemplate
   {

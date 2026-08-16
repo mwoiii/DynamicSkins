@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace RuneFoxMods.DynamicSkinBuilder
+namespace DynamicSkinBuilder
 {
     using RoRSkinBuilder.Data;
     using RoRSkinBuilder;
@@ -27,7 +27,7 @@ namespace RuneFoxMods.DynamicSkinBuilder
         public virtual string TransformText()
         {
             this.Write("using RoR2;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing UnityEngine;" +
-                    "\r\nusing UnityEngine.AddressableAssets;\r\nusing RuneFoxMods.DynamicSkins;" + 
+                    "\r\nusing UnityEngine.AddressableAssets;\r\nusing DynamicSkins;" + 
                     "\r\nusing MonoMod.RuntimeDetour;\r\n\r\n\r\n//NameSpace" +
                     " and SkinName are generated from SkinDef Generator\r\nnamespace ");
             this.Write(this.ToStringHelper.ToStringWithCulture(info.assetInfo.uccModName));

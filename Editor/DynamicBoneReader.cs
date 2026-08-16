@@ -2,7 +2,7 @@
 using System.Globalization;
 using UnityEngine;
 
-namespace RuneFoxMods.DynamicSkinBuilder
+namespace DynamicSkinBuilder
 {
   static public class DynamicBoneReader
   {
