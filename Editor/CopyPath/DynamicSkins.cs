@@ -162,7 +162,11 @@ namespace DynamicSkins
     
     internal System.Collections.IEnumerator SkinDefApply(Func<SkinDef, GameObject, List<AssetReferenceT<Material>>, List<AssetReferenceT<Mesh>>, int, System.Collections.IEnumerator> orig, SkinDef self, GameObject modelObject, List<AssetReferenceT<Material>> loadedMaterials, List<AssetReferenceT<Mesh>> loadedMeshes, int unloadType) 
     {
-      var ret = orig(self, modelObject, loadedMaterials, loadedMeshes, unloadType);
+      var origSelf = orig(self, modelObject, loadedMaterials, loadedMeshes, unloadType);
+	  while (origSelf.MoveNext()) 
+	  {
+          yield return origSelf.Current;
+      }
 
       RemoveInvalidModelObjects();
 
