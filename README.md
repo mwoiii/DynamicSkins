@@ -1,5 +1,5 @@
 > [!CAUTION]
-> The DynamicSkins and SkinBuilderExtension packages are outdated as of RoRSkinBuilder 2.6.0 - the behaviour originally provided by these packages is now provided by RoRSkinBuilder
+> The DynamicSkins package is outdated as of RoRSkinBuilder 2.6.0 - the behaviour originally provided by this package is now provided more cleanly by RoRSkinBuilder
 
 # DynamicSkins
 A toolkit to add DynamicBones to custom skins in RoR2
